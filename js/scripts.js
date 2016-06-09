@@ -13,6 +13,8 @@ var numerals = function(number) {
   output = [];
   if ( parseInt(number) > 3999 ) {
     alert('Your number is to high.')
+  } else if ( parseInt(number) < 0 ) {
+    alert("Roman numerals are for positive integers only.")
   } else {
     for (var i = 0; i < number.length; i++) {
       output.push(number.charAt(i));
